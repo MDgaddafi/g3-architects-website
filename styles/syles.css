@@ -6,7 +6,8 @@
     font-family: 'Work Sans', sans-serif;
 
 }
-.text-light-gray{
+
+.text-light-gray {
     color: #727272;
 }
 
@@ -21,6 +22,7 @@
     border: none;
 
 }
+
 .section-title {
     font-size: 2.8rem;
     font-weight: 700;
@@ -72,7 +74,7 @@ nav li a {
     color: #131313;
 }
 
-.banner img{
+.banner img {
     margin-top: 30px;
     width: 100%;
 }
@@ -80,50 +82,83 @@ nav li a {
 
 
 /* main styles */
-main{
+main {
     max-width: 1440px;
     margin: 70px auto;
 
 }
 
 /* teams styles */
-.teams-container{
+.teams-container {
     display: flex;
     align-items: center;
 }
 
-.teams-img-container{
+.teams-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-.teams-contnet{
+
+.teams-contnet {
     padding-right: 70px;
     padding-left: 70px;
 
 }
-.teams-title{
+
+.teams-title {
     font-size: 2.8rem;
 }
-.teams-title .qucick-list{
+
+.teams-title .qucick-list {
     font-weight: 500;
 }
-.teams-title .text-featurs{
+
+.teams-title .text-featurs {
     color: #FF900E;
     font-weight: 700;
 }
 
+/* Facts section style */
+.facetis-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facetis-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+    
+}
+.facetis-card-container .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+
+.facetis-card-container .card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 /* responsive mobile */
 @media screen and (max-width:576px) {
-    header, .teams-contnet{
+
+    header,
+    .teams-contnet {
         padding: 20px;
     }
-    nav, .teams-container{
+
+    nav,
+    .teams-container {
         flex-direction: column;
     }
-    .teams-img-container{
+
+    .teams-img-container {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -131,11 +166,13 @@ main{
 /* responsive Tablet */
 
 @media screen and (min-width:576px) and (max-width:960px) {
-    header{
+    header {
         padding: 50px;
     }
-    nav, .teams-container{
+
+    nav,
+    .teams-container {
         flex-direction: column;
     }
-    
+
 }
